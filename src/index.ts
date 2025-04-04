@@ -33,7 +33,7 @@ server.tool(
       const encodedCredentials = Buffer.from(credentials).toString('base64');
       
       // Construct URL with query parameters
-      const url = `https://mixpanel.com/api/query/events/top?project_id=${project_id}&type=${type}${limit ? `&limit=${limit}` : ''}`;
+      const url = `https://eu.mixpanel.com/api/query/events/top?project_id=${project_id}&type=${type}${limit ? `&limit=${limit}` : ''}`;
       
       // Set up request options
       const options = {
